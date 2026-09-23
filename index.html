@@ -82,6 +82,33 @@ input,select{color:var(--navy);border-bottom-color:#b99a42}
 button{background:var(--navy);color:var(--ivory);border:1px solid var(--gold)}
 button:hover{background:#0a3157}
 .envelope{color:var(--gold)}
+  .developer-bar{
+    background:var(--gold);
+    color:var(--navy);
+    text-align:center;
+    padding:10px 15px;
+    font-family:Montserrat,Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:.08em;
+}
+
+.developer-bar strong{
+    font-weight:600;
+}
+
+.developer-bar span{
+    margin:0 8px;
+}
+
+.developer-bar a{
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.developer-bar a:hover{
+    text-decoration:underline;
+}
 
 </style></head><body>
 <section class="hero"><div class="hc"><div class="ey">Together with my family,<br>I invite you to celebrate</div><h1>Danna<small>MY XV</small></h1><div class="date">DECEMBER 26 · 2026</div></div></section>
@@ -103,6 +130,13 @@ button:hover{background:#0a3157}
 <p id="thanks" hidden>Thank you! Your response has been received.</p>
 <p id="rsvpError" hidden>We couldn’t send your response. Please try again.</p></div></div></section>
 <footer><div class="ey">Danna · XV</div><div class="serif">Thank you for being part of my story</div><p>December 26, 2026</p></footer>
+  <div class="developer-bar">
+  Invitation developed by <strong>IAM Marketing + Design</strong>
+  <span>·</span>
+  <a href="https://wa.me/593984487647" target="_blank">
+    +593 98 448 7647
+  </a>
+</div>
 <script>const t=new Date('2026-12-26T19:30:00').getTime();function tick(){let x=Math.max(0,t-Date.now());d.textContent=String(Math.floor(x/86400000)).padStart(3,'0');h.textContent=String(Math.floor(x%86400000/3600000)).padStart(2,'0');m.textContent=String(Math.floor(x%3600000/60000)).padStart(2,'0');s.textContent=String(Math.floor(x%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000)</script>
 <script>
 const RSVP_ENDPOINT="https://script.google.com/macros/s/AKfycbwnSbTcEdUG6lrwy-FNjVhdwDOTA_oO4iYqjRs9ABsgV9htGEA_7bZ_HuINwr0tuI_mHg/exec";
