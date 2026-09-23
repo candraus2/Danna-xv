@@ -35,8 +35,26 @@ h1{
   margin:35px 0 0;
 }
 h1 small{
-  font-family:Montserrat,Arial,sans-serif;
-  color:var(--gold-soft);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    font-family:Montserrat,Arial,sans-serif;
+    color:var(--gold-soft);
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:6px;
+    line-height:1;
+    margin-top:10px;
+}
+
+h1 small::before,
+h1 small::after{
+    content:"";
+    width:35px;
+    height:1px;
+    background:var(--gold-soft);
+    opacity:.75;
 }
 h2,.serif,.count b,.date{color:var(--ivory)}
 .date{color:var(--gold-soft)}
@@ -62,7 +80,7 @@ button:hover{background:#0a3157}
 .envelope{color:var(--gold)}
 
 </style></head><body>
-<section class="hero"><div class="hc"><div class="ey">Together with my family, I invite you to celebrate</div><h1>Danna<small>MY XV</small></h1><div class="date">DECEMBER 26 · 2026</div></div></section>
+<section class="hero"><div class="hc"><div class="ey">Together with my family, I invite you to celebrate</div><h1>Danna<small>- MY XV -</small></h1><div class="date">DECEMBER 26 · 2026</div></div></section>
 <section class="countdown"><div class="wrap"><div class="ey">Counting down to an unforgettable night</div><div class="count"><div><b id="d">000</b><span>DAYS</span></div><div><b id="h">00</b><span>HOURS</span></div><div><b id="m">00</b><span>MINUTES</span></div><div><b id="s">00</b><span>SECONDS</span></div></div></div></section>
 <section class="story"><div class="wrap grid"><div><div class="ey">My story</div><h2>A dream come true</h2><p>Some moments are meant to be treasured forever. I would love for you to be part of this special chapter filled with joy, memories and new beginnings.</p><div class="sig">Danna ♡</div></div><div class="storyphoto"></div></div></section>
 <section class="details"><div class="wrap"><div class="ey" style="text-align:center">Event details</div><h2 style="text-align:center">Celebrate with me</h2><div class="cards"><div class="card"><b>Date</b><small>Saturday<br>December 26, 2026</small></div><div class="card"><b>Time</b><small>7:30 PM<br>Arrival 7:00 PM</small></div><div class="card"><b>Venue</b><small>Maison Bleu<br>Final address coming soon</small></div><div class="card"><b>Dress code</b><small>Formal Attire</small></div></div><div class="dress"><div class="ey">Dress code note</div><p><strong>Navy blue is reserved for the quinceañera.</strong></p></div></div></section>
