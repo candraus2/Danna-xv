@@ -102,11 +102,17 @@ rsvpForm.addEventListener("submit",async function(event){
   };
 
   try{
+    const formData=new URLSearchParams();
+    formData.append("name",payload.name);
+    formData.append("attendance",payload.attendance);
+    formData.append("guests",payload.guests);
+    formData.append("notes",payload.notes);
+    formData.append("family",payload.family);
+
     await fetch(RSVP_ENDPOINT,{
       method:"POST",
       mode:"no-cors",
-      headers:{"Content-Type":"text/plain;charset=utf-8"},
-      body:JSON.stringify(payload)
+      body:formData
     });
     thanks.hidden=false;
     rsvpForm.reset();
