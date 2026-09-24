@@ -1,39 +1,467 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#031a35"><title>Danna's XV | December 26, 2026</title>
-<style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;600&display=swap');
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#031a35;color:white;font-family:Montserrat,Arial;overflow-x:hidden}body:before{content:"";position:fixed;inset:-200px 0 0;z-index:10;pointer-events:none;opacity:.25;background:radial-gradient(circle,#fff 0 3px,transparent 4px),radial-gradient(circle,#197be0 0 4px,transparent 5px);background-size:170px 210px,230px 260px;animation:fall 16s linear infinite}@keyframes fall{to{transform:translateY(430px)}}section{padding:80px 24px}.wrap{max-width:980px;margin:auto}.ey{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#dce4ee}h1,h2,.serif,.count b{font-family:"Cormorant Garamond",Georgia,serif}h2{font-size:clamp(46px,10vw,82px);line-height:.9;font-weight:500;margin:12px 0 25px}p{line-height:1.8;color:#d8e0eb}.hero{min-height:100svh;padding:0;position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:url(images/portada.jpg) center 35%/cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,#031a3533 58%,#031a35 100%)}.hc{z-index:2;text-align:center;padding:0 22px 50px}h1{font-size:clamp(75px,20vw,160px);line-height:.65;margin:12px 0 30px;font-weight:500;text-shadow:0 3px 25px #000}h1 small{display:block;font:500 12px Montserrat;letter-spacing:.45em;margin-top:35px}.date{font:500 22px "Cormorant Garamond";letter-spacing:.15em}.countdown{text-align:center;background:linear-gradient(#031a35,#05284d)}.count{display:grid;grid-template-columns:repeat(4,1fr);margin-top:25px}.count div{border-right:1px solid #ffffff30}.count div:last-child{border:0}.count b{font-size:clamp(34px,9vw,70px)}.count span{display:block;font-size:9px;letter-spacing:.18em;color:#cbd5e2}.story{background:radial-gradient(circle at 80% 20%,#0a3769,#031a35 58%)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.storyphoto{aspect-ratio:1/1;background:url(images/foto-01.jpg) center/cover;border:8px solid #f5f2eb;box-shadow:0 20px 55px #0008;transform:rotate(2deg)}.sig{font:italic 35px "Cormorant Garamond"}.details{background:#041d3a}.cards{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #ffffff30}.card{text-align:center;padding:32px 15px;border-right:1px solid #ffffff30}.card:last-child{border:0}.card b{display:block;font:500 25px "Cormorant Garamond";margin:8px}.card small{color:#bdc9d8;line-height:1.5}.dress{max-width:680px;margin:28px auto 0;text-align:center;border:1px solid #ffffff30;padding:25px}.gallery{background:linear-gradient(#031a35,#02162e)}.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.ph{aspect-ratio:3/4;border:6px solid #f5f2eb;box-shadow:0 12px 30px #0008;background-size:cover;background-position:center}.a{background-image:url(images/foto-01.jpg)}.b{background-image:url(images/portada.jpg)}.c{background-image:url(images/foto-02.jpg)}.gifts{text-align:center;background:radial-gradient(circle,#0a3768,#031a35 65%)}.gift{max-width:650px;margin:auto;padding:45px 30px;border-block:1px solid #ffffff3a}.envelope{font-size:54px}.map{display:grid;grid-template-columns:1.2fr .8fr;border:1px solid #ffffff35;margin-top:30px}.mapdemo{min-height:290px;background:linear-gradient(135deg,#dfe9e8,#adc3bd);display:grid;place-items:center;color:#08315b;text-align:center}.mapdemo b{font:500 36px "Cormorant Garamond"}.mapinfo{padding:40px;background:#06213f}.btn{display:inline-block;border:1px solid #e4e9f0;border-radius:99px;padding:15px 22px;color:white;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.rsvp{text-align:center}.box{max-width:650px;margin:30px auto;background:#f7f4ee;color:#071b34;padding:42px 28px}.box p{color:#58687a}input,select{width:100%;padding:15px 3px;border:0;border-bottom:1px solid #a9b4c1;background:transparent;margin:8px 0 17px}button{border:0;border-radius:99px;background:#041d3a;color:white;padding:16px 27px;letter-spacing:.14em;text-transform:uppercase}footer{padding:85px 24px;text-align:center;background:#02152c}footer .serif{font-size:40px;font-style:italic}@media(max-width:720px){.grid,.map{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.photos{grid-template-columns:1fr}}
+<!doctype html>
+<html lang="en">
 
-/* 2026 palette update: Navy Blue + Gold + Ivory */
-@font-face{
-  font-family:"Daustley";
-  src:url("Daustley.otf") format("opentype");
-  font-display:swap;
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#031a35">
+
+<title>Danna's XV | December 26, 2026</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+    box-sizing:border-box;
 }
-:root{
-  --navy:#031a35;
-  --navy-deep:#02152c;
-  --navy-mid:#06284d;
-  --gold:#d4af37;
-  --gold-soft:#e4c766;
-  --ivory:#fff8e7;
-  --ivory-soft:#f3ead7;
+
+html{
+    scroll-behavior:smooth;
 }
-body{background:var(--navy);color:var(--ivory)}
+
+body{
+    margin:0;
+    background:#031a35;
+    color:white;
+    font-family:Montserrat,Arial;
+    overflow-x:hidden;
+}
+
 body:before{
-  opacity:.28;
-  background:
-    radial-gradient(circle,var(--ivory) 0 3px,transparent 4px),
-    radial-gradient(circle,var(--gold) 0 4px,transparent 5px);
-  background-size:170px 210px,230px 260px;
+    content:"";
+    position:fixed;
+    inset:-200px 0 0;
+    z-index:10;
+    pointer-events:none;
+    opacity:.25;
+    background:
+        radial-gradient(circle,#fff 0 3px,transparent 4px),
+        radial-gradient(circle,#197be0 0 4px,transparent 5px);
+    background-size:170px 210px,230px 260px;
+    animation:fall 16s linear infinite;
 }
-.ey{color:var(--gold-soft)}
+
+@keyframes fall{
+    to{
+        transform:translateY(430px);
+    }
+}
+
+section{
+    padding:80px 24px;
+}
+
+.wrap{
+    max-width:980px;
+    margin:auto;
+}
+
+.ey{
+    font-size:10px;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    color:#dce4ee;
+}
+
+h1,
+h2,
+.serif,
+.count b{
+    font-family:"Cormorant Garamond",Georgia,serif;
+}
+
+h2{
+    font-size:clamp(46px,10vw,82px);
+    line-height:.9;
+    font-weight:500;
+    margin:12px 0 25px;
+}
+
+p{
+    line-height:1.8;
+    color:#d8e0eb;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:100svh;
+    padding:0;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url(images/portada.jpg) center 35%/cover;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        transparent 35%,
+        #031a3533 58%,
+        #031a35 100%
+    );
+}
+
+.hc{
+    z-index:2;
+    text-align:center;
+    padding:0 22px 50px;
+}
+
 h1{
-  font-family:"Daustley","Cormorant Garamond",Georgia,serif;
-  color:var(--ivory);
-  font-weight:400;
-  font-size:clamp(110px,18vw,180px);
-  line-height:0.75;
-  margin:35px 0 0;
+    font-size:clamp(75px,20vw,160px);
+    line-height:.65;
+    margin:12px 0 30px;
+    font-weight:500;
+    text-shadow:0 3px 25px #000;
 }
+
+h1 small{
+    display:block;
+    font:500 12px Montserrat;
+    letter-spacing:.45em;
+    margin-top:35px;
+}
+
+.date{
+    font:500 22px "Cormorant Garamond";
+    letter-spacing:.15em;
+}
+
+
+/* COUNTDOWN */
+
+.countdown{
+    text-align:center;
+    background:linear-gradient(#031a35,#05284d);
+}
+
+.count{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    margin-top:25px;
+}
+
+.count div{
+    border-right:1px solid #ffffff30;
+}
+
+.count div:last-child{
+    border:0;
+}
+
+.count b{
+    font-size:clamp(34px,9vw,70px);
+}
+
+.count span{
+    display:block;
+    font-size:9px;
+    letter-spacing:.18em;
+    color:#cbd5e2;
+}
+
+
+/* STORY */
+
+.story{
+    background:radial-gradient(
+        circle at 80% 20%,
+        #0a3769,
+        #031a35 58%
+    );
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.storyphoto{
+    aspect-ratio:1/1;
+    background:url(images/foto-01.jpg) center/cover;
+    border:8px solid #f5f2eb;
+    box-shadow:0 20px 55px #0008;
+    transform:rotate(2deg);
+}
+
+.sig{
+    font:italic 35px "Cormorant Garamond";
+}
+
+
+/* DETAILS */
+
+.details{
+    background:#041d3a;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-block:1px solid #ffffff30;
+}
+
+.card{
+    text-align:center;
+    padding:32px 15px;
+    border-right:1px solid #ffffff30;
+}
+
+.card:last-child{
+    border:0;
+}
+
+.card b{
+    display:block;
+    font:500 25px "Cormorant Garamond";
+    margin:8px;
+}
+
+.card small{
+    color:#bdc9d8;
+    line-height:1.5;
+}
+
+.dress{
+    max-width:680px;
+    margin:28px auto 0;
+    text-align:center;
+    border:1px solid #ffffff30;
+    padding:25px;
+}
+
+
+/* GALLERY */
+
+.gallery{
+    background:linear-gradient(#031a35,#02162e);
+}
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.ph{
+    aspect-ratio:3/4;
+    border:6px solid #f5f2eb;
+    box-shadow:0 12px 30px #0008;
+    background-size:cover;
+    background-position:center;
+}
+
+.a{
+    background-image:url(images/foto-01.jpg);
+}
+
+.b{
+    background-image:url(images/portada.jpg);
+}
+
+.c{
+    background-image:url(images/foto-02.jpg);
+}
+
+
+/* GIFTS */
+
+.gifts{
+    text-align:center;
+    background:radial-gradient(
+        circle,
+        #0a3768,
+        #031a35 65%
+    );
+}
+
+.gift{
+    max-width:650px;
+    margin:auto;
+    padding:45px 30px;
+    border-block:1px solid #ffffff3a;
+}
+
+.envelope{
+    font-size:54px;
+}
+
+
+/* MAP */
+
+.map{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    border:1px solid #ffffff35;
+    margin-top:30px;
+}
+
+.mapdemo{
+    min-height:290px;
+    background:linear-gradient(135deg,#dfe9e8,#adc3bd);
+    display:grid;
+    place-items:center;
+    color:#08315b;
+    text-align:center;
+}
+
+.mapdemo b{
+    font:500 36px "Cormorant Garamond";
+}
+
+.mapinfo{
+    padding:40px;
+    background:#06213f;
+}
+
+.btn{
+    display:inline-block;
+    border:1px solid #e4e9f0;
+    border-radius:99px;
+    padding:15px 22px;
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-size:10px;
+}
+
+
+/* RSVP */
+
+.rsvp{
+    text-align:center;
+}
+
+.box{
+    max-width:650px;
+    margin:30px auto;
+    background:#f7f4ee;
+    color:#071b34;
+    padding:42px 28px;
+}
+
+.box p{
+    color:#58687a;
+}
+
+input,
+select{
+    width:100%;
+    padding:15px 3px;
+    border:0;
+    border-bottom:1px solid #a9b4c1;
+    background:transparent;
+    margin:8px 0 17px;
+}
+
+button{
+    border:0;
+    border-radius:99px;
+    background:#041d3a;
+    color:white;
+    padding:16px 27px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding:85px 24px;
+    text-align:center;
+    background:#02152c;
+}
+
+footer .serif{
+    font-size:40px;
+    font-style:italic;
+}
+
+
+/* MOBILE */
+
+@media(max-width:720px){
+
+    .grid,
+    .map{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .photos{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* =======================================
+   NAVY + GOLD + IVORY PALETTE
+======================================= */
+
+@font-face{
+    font-family:"Daustley";
+    src:url("Daustley.otf") format("opentype");
+    font-display:swap;
+}
+
+:root{
+    --navy:#031a35;
+    --navy-deep:#02152c;
+    --navy-mid:#06284d;
+    --gold:#d4af37;
+    --gold-soft:#e4c766;
+    --ivory:#fff8e7;
+    --ivory-soft:#f3ead7;
+}
+
+body{
+    background:var(--navy);
+    color:var(--ivory);
+}
+
+body:before{
+    opacity:.28;
+    background:
+        radial-gradient(circle,var(--ivory) 0 3px,transparent 4px),
+        radial-gradient(circle,var(--gold) 0 4px,transparent 5px);
+    background-size:170px 210px,230px 260px;
+}
+
+.ey{
+    color:var(--gold-soft);
+}
+
+h1{
+    font-family:"Daustley","Cormorant Garamond",Georgia,serif;
+    color:var(--ivory);
+    font-weight:400;
+    font-size:clamp(110px,18vw,180px);
+    line-height:.75;
+    margin:35px 0 0;
+}
+
 h1 small{
     display:flex;
     align-items:center;
@@ -57,32 +485,130 @@ h1 small::after{
     background:var(--gold-soft);
     opacity:.8;
 }
-h2,.serif,.count b,.date{color:var(--ivory)}
+
+h2,
+.serif,
+.count b,
+.date{
+    color:var(--ivory);
+}
+
 .date{
     color:var(--gold-soft);
     margin-top:14px;
 }
-p{color:var(--ivory-soft)}
-.countdown{background:linear-gradient(var(--navy),var(--navy-mid))}
-.story{background:radial-gradient(circle at 80% 20%,#0a3157,var(--navy) 58%)}
-.details{background:#041d3a}
-.gallery{background:linear-gradient(var(--navy),var(--navy-deep))}
-.gifts{background:radial-gradient(circle,#0a3157,var(--navy) 65%)}
-footer{background:var(--navy-deep)}
-.card,.dress,.gift,.map{border-color:#d4af375c}
-.card b,.mapinfo h3{color:var(--gold-soft)}
-.card small{color:var(--ivory-soft)}
-.ph{border-color:var(--ivory)}
-.mapinfo{background:#06213f}
-.btn{border-color:var(--gold);color:var(--ivory)}
-.btn:hover{background:var(--gold);color:var(--navy)}
-.box{background:var(--ivory);color:var(--navy)}
-.box p{color:#596474}
-input,select{color:var(--navy);border-bottom-color:#b99a42}
-button{background:var(--navy);color:var(--ivory);border:1px solid var(--gold)}
-button:hover{background:#0a3157}
-.envelope{color:var(--gold)}
-  .developer-bar{
+
+p{
+    color:var(--ivory-soft);
+}
+
+.countdown{
+    background:linear-gradient(
+        var(--navy),
+        var(--navy-mid)
+    );
+}
+
+.story{
+    background:radial-gradient(
+        circle at 80% 20%,
+        #0a3157,
+        var(--navy) 58%
+    );
+}
+
+.details{
+    background:#041d3a;
+}
+
+.gallery{
+    background:linear-gradient(
+        var(--navy),
+        var(--navy-deep)
+    );
+}
+
+.gifts{
+    background:radial-gradient(
+        circle,
+        #0a3157,
+        var(--navy) 65%
+    );
+}
+
+footer{
+    background:var(--navy-deep);
+}
+
+.card,
+.dress,
+.gift,
+.map{
+    border-color:#d4af375c;
+}
+
+.card b,
+.mapinfo h3{
+    color:var(--gold-soft);
+}
+
+.card small{
+    color:var(--ivory-soft);
+}
+
+.ph{
+    border-color:var(--ivory);
+}
+
+.mapinfo{
+    background:#06213f;
+}
+
+.btn{
+    border-color:var(--gold);
+    color:var(--ivory);
+}
+
+.btn:hover{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+.box{
+    background:var(--ivory);
+    color:var(--navy);
+}
+
+.box p{
+    color:#596474;
+}
+
+input,
+select{
+    color:var(--navy);
+    border-bottom-color:#b99a42;
+}
+
+button{
+    background:var(--navy);
+    color:var(--ivory);
+    border:1px solid var(--gold);
+}
+
+button:hover{
+    background:#0a3157;
+}
+
+.envelope{
+    color:var(--gold);
+}
+
+
+/* =======================================
+   DEVELOPER BAR
+======================================= */
+
+.developer-bar{
     background:var(--gold);
     color:var(--navy);
     text-align:center;
@@ -109,6 +635,12 @@ button:hover{background:#0a3157}
 .developer-bar a:hover{
     text-decoration:underline;
 }
+
+
+/* =======================================
+   MUSIC BUTTON
+======================================= */
+
 .music-button{
     position:fixed;
     right:20px;
@@ -138,125 +670,933 @@ button:hover{background:#0a3157}
     background:var(--navy);
     color:var(--gold);
 }
-</style></head><body>
-  <audio id="bgMusic" loop preload="auto">
-  <source src="audio/musica.mp3" type="audio/mpeg">
-</audio>
 
-<button id="musicButton" class="music-button" type="button" aria-label="Pause music">
-  ♫
-</button>
-<section class="hero"><div class="hc"><div class="ey">Together with my family,<br>I invite you to celebrate</div><h1>Danna<small>MY XV</small></h1><div class="date">DECEMBER 26 · 2026</div></div></section>
-<section class="countdown"><div class="wrap"><div class="ey">Counting down to an unforgettable night</div><div class="count"><div><b id="d">000</b><span>DAYS</span></div><div><b id="h">00</b><span>HOURS</span></div><div><b id="m">00</b><span>MINUTES</span></div><div><b id="s">00</b><span>SECONDS</span></div></div></div></section>
-<section class="story"><div class="wrap grid"><div><div class="ey">My story</div><h2>A dream come true</h2><p>Some moments are meant to be treasured forever. I would love for you to be part of this special chapter filled with joy, memories and new beginnings.</p><div class="sig">Danna ♡</div></div><div class="storyphoto"></div></div></section>
-<section class="details"><div class="wrap"><div class="ey" style="text-align:center">Event details</div><h2 style="text-align:center">Celebrate with me</h2><div class="cards"><div class="card"><b>Date</b><small>Saturday<br>December 26, 2026</small></div><div class="card"><b>Time</b><small>7:30 PM<br>Arrival 7:00 PM</small></div><div class="card"><b>Venue</b><small>Maison Bleu<br>Final address coming soon</small></div><div class="card"><b>Dress code</b><small>Formal Attire</small></div></div><div class="dress"><div class="ey">Dress code note</div><p><strong>Navy blue is reserved for the quinceañera.</strong></p></div></div></section>
-<section class="gallery"><div class="wrap"><div class="ey" style="text-align:center">Gallery</div><h2 style="text-align:center">A glimpse of this chapter</h2><div class="photos"><div class="ph a"></div><div class="ph b"></div><div class="ph c"></div></div></div></section>
-<section class="gifts"><div class="wrap gift"><div class="ey">Gifts</div><div class="envelope">✉</div><h2>Gifts</h2><p>Your presence is the greatest gift. If you wish to celebrate Danna with something more, an envelope gift would be warmly appreciated as she begins this special new chapter.</p></div></section>
-<section class="details"><div class="wrap"><div class="ey">Directions</div><h2>See you there</h2><div class="map"><div class="mapdemo"><div><b>Event location</b><br><small>Final map coming soon</small></div></div><div class="mapinfo"><h3>Maison Bleu</h3><p>Once the final venue is confirmed, the exact location will appear here.</p><a class="btn" href="#" onclick="event.preventDefault()">Open in Google Maps</a></div></div></div></section>
-<section class="rsvp"><div class="wrap"><div class="ey">RSVP</div><h2>Will you celebrate with us?</h2><p>Please let us know if you can join Danna on her special night.</p><div class="box"><form id="rsvpForm">
-<input id="guestName" name="name" required placeholder="Guest name">
-<select id="attendance" name="attendance" required>
-<option value="Joyfully accepts">Joyfully accepts</option>
-<option value="Regretfully declines">Regretfully declines</option>
-</select>
-<input id="guests" name="guests" type="number" min="1" max="10" value="1" aria-label="Number of guests">
-<button id="rsvpButton" type="submit">Confirm attendance</button>
-</form>
-<p id="thanks" hidden>Thank you! Your response has been received.</p>
-<p id="rsvpError" hidden>We couldn’t send your response. Please try again.</p></div></div></section>
-<footer><div class="ey">Danna · XV</div><div class="serif">Thank you for being part of my story</div><p>December 26, 2026</p></footer>
-  <div class="developer-bar">
-  Digital invitation by <strong>IAM Marketing + Design</strong>
-  <span>·</span>
-  <a href="https://wa.me/593984487647" target="_blank">
-    +593 98 448 7647
-  </a>
-</div>
-<script>const t=new Date('2026-12-26T19:30:00').getTime();function tick(){let x=Math.max(0,t-Date.now());d.textContent=String(Math.floor(x/86400000)).padStart(3,'0');h.textContent=String(Math.floor(x%86400000/3600000)).padStart(2,'0');m.textContent=String(Math.floor(x%3600000/60000)).padStart(2,'0');s.textContent=String(Math.floor(x%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000)</script>
-<script>
-const RSVP_ENDPOINT="https://script.google.com/macros/s/AKfycbwnSbTcEdUG6lrwy-FNjVhdwDOTA_oO4iYqjRs9ABsgV9htGEA_7bZ_HuINwr0tuI_mHg/exec";
-const rsvpForm=document.getElementById("rsvpForm");
-const rsvpButton=document.getElementById("rsvpButton");
-const thanks=document.getElementById("thanks");
-const rsvpError=document.getElementById("rsvpError");
 
-rsvpForm.addEventListener("submit",async function(event){
-  event.preventDefault();
-  thanks.hidden=true;
-  rsvpError.hidden=true;
-  rsvpButton.disabled=true;
-  rsvpButton.textContent="Sending...";
+/* =======================================
+   WELCOME / OPEN INVITATION SCREEN
+======================================= */
 
-  const payload={
-    name:document.getElementById("guestName").value.trim(),
-    attendance:document.getElementById("attendance").value,
-    guests:document.getElementById("guests").value,
-    notes:"",
-    family:""
-  };
+.welcome-screen{
+    position:fixed;
+    inset:0;
+    z-index:9999;
 
-  try{
-    const formData=new URLSearchParams();
-    formData.append("name",payload.name);
-    formData.append("attendance",payload.attendance);
-    formData.append("guests",payload.guests);
-    formData.append("notes",payload.notes);
-    formData.append("family",payload.family);
+    background:
+        linear-gradient(
+            180deg,
+            #031a3522 0%,
+            #031a3544 40%,
+            #031a35cc 100%
+        ),
+        url("images/portada.jpg") center 35%/cover;
 
-    await fetch(RSVP_ENDPOINT,{
-      method:"POST",
-      mode:"no-cors",
-      body:formData
-    });
-    thanks.hidden=false;
-    rsvpForm.reset();
-    document.getElementById("guests").value="1";
-  }catch(error){
-    rsvpError.hidden=false;
-  }finally{
-    rsvpButton.disabled=false;
-    rsvpButton.textContent="Confirm attendance";
-  }
-});
-</script>
-<script>
-const music = document.getElementById("bgMusic");
-const musicButton = document.getElementById("musicButton");
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    text-align:center;
 
-music.volume = 0.45;
+    opacity:1;
+    visibility:visible;
 
-async function startMusic(){
-    try{
-        await music.play();
-        musicButton.textContent = "♫";
-        musicButton.classList.remove("paused");
-        musicButton.setAttribute("aria-label","Pause music");
-    }catch(error){
-        musicButton.textContent = "▶";
-        musicButton.classList.add("paused");
-        musicButton.setAttribute("aria-label","Play music");
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+.welcome-screen.hidden{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.welcome-content{
+    width:100%;
+    padding:40px 24px 60px;
+    position:relative;
+    z-index:2;
+}
+
+.welcome-ey{
+    font-family:Montserrat,Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:4px;
+    color:var(--gold-soft);
+    margin-bottom:20px;
+}
+
+.welcome-name{
+    font-family:"Daustley","Cormorant Garamond",Georgia,serif;
+    font-size:clamp(110px,20vw,180px);
+    line-height:.75;
+    color:var(--ivory);
+    text-shadow:0 4px 30px #0008;
+}
+
+.welcome-xv{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+
+    font-family:Montserrat,Arial,sans-serif;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:5px;
+    color:var(--gold-soft);
+
+    margin:14px 0 30px;
+}
+
+.welcome-xv::before,
+.welcome-xv::after{
+    content:"";
+    display:block;
+    width:55px;
+    height:1px;
+    background:var(--gold-soft);
+    opacity:.8;
+}
+
+.open-invitation{
+    background:rgba(3,26,53,.45);
+    border:1px solid var(--gold);
+    color:var(--ivory);
+    padding:16px 30px;
+    font-family:Montserrat,Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:2.5px;
+    cursor:pointer;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    transition:.3s ease;
+}
+
+.open-invitation:hover{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+.welcome-date{
+    margin-top:22px;
+    font-family:"Cormorant Garamond",Georgia,serif;
+    color:var(--gold-soft);
+    font-size:17px;
+    letter-spacing:2px;
+}
+
+
+/* Hide floating music control until invitation opens */
+
+body:not(.invitation-open) .music-button{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+body.invitation-open .music-button{
+    opacity:1;
+    visibility:visible;
+}
+
+
+/* Welcome mobile */
+
+@media(max-width:720px){
+
+    .welcome-content{
+        padding-bottom:50px;
+    }
+
+    .welcome-name{
+        font-size:clamp(105px,32vw,160px);
+    }
+
+    .welcome-xv{
+        font-size:11px;
+    }
+
+    .welcome-date{
+        font-size:16px;
     }
 }
 
-musicButton.addEventListener("click", async () => {
-    if(music.paused){
-        await startMusic();
-    }else{
-        music.pause();
-        musicButton.textContent = "▶";
-        musicButton.classList.add("paused");
-        musicButton.setAttribute("aria-label","Play music");
-    }
-});
+</style>
 
-startMusic();
+</head>
 
-/* If autoplay is blocked, start on the visitor's first interaction */
-document.addEventListener("click", function firstInteraction(event){
-    if(music.paused && event.target !== musicButton){
-        startMusic();
-    }
-    document.removeEventListener("click", firstInteraction);
-}, {once:true});
+<body>
+
+
+<!-- =======================================
+     OPEN INVITATION SCREEN
+======================================= -->
+
+<div id="welcomeScreen" class="welcome-screen">
+
+    <div class="welcome-content">
+
+        <div class="welcome-ey">
+            YOU'RE INVITED TO
+        </div>
+
+        <div class="welcome-name">
+            Danna
+        </div>
+
+        <div class="welcome-xv">
+            MY XV
+        </div>
+
+        <button
+            id="openInvitation"
+            class="open-invitation"
+            type="button">
+            OPEN INVITATION
+        </button>
+
+        <div class="welcome-date">
+            DECEMBER 26 · 2026
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =======================================
+     MUSIC
+======================================= -->
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    id="musicButton"
+    class="music-button"
+    type="button"
+    aria-label="Pause music">
+    ♫
+</button>
+
+
+<!-- =======================================
+     HERO
+======================================= -->
+
+<section class="hero">
+
+    <div class="hc">
+
+        <div class="ey">
+            Together with my family,<br>
+            I invite you to celebrate
+        </div>
+
+        <h1>
+            Danna
+            <small>MY XV</small>
+        </h1>
+
+        <div class="date">
+            DECEMBER 26 · 2026
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     COUNTDOWN
+======================================= -->
+
+<section class="countdown">
+
+    <div class="wrap">
+
+        <div class="ey">
+            Counting down to an unforgettable night
+        </div>
+
+        <div class="count">
+
+            <div>
+                <b id="d">000</b>
+                <span>DAYS</span>
+            </div>
+
+            <div>
+                <b id="h">00</b>
+                <span>HOURS</span>
+            </div>
+
+            <div>
+                <b id="m">00</b>
+                <span>MINUTES</span>
+            </div>
+
+            <div>
+                <b id="s">00</b>
+                <span>SECONDS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     STORY
+======================================= -->
+
+<section class="story">
+
+    <div class="wrap grid">
+
+        <div>
+
+            <div class="ey">
+                My story
+            </div>
+
+            <h2>
+                A dream come true
+            </h2>
+
+            <p>
+                Some moments are meant to be treasured forever.
+                I would love for you to be part of this special
+                chapter filled with joy, memories and new beginnings.
+            </p>
+
+            <div class="sig">
+                Danna ♡
+            </div>
+
+        </div>
+
+        <div class="storyphoto"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     EVENT DETAILS
+======================================= -->
+
+<section class="details">
+
+    <div class="wrap">
+
+        <div class="ey" style="text-align:center">
+            Event details
+        </div>
+
+        <h2 style="text-align:center">
+            Celebrate with me
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <b>Date</b>
+                <small>
+                    Saturday<br>
+                    December 26, 2026
+                </small>
+            </div>
+
+            <div class="card">
+                <b>Time</b>
+                <small>
+                    7:30 PM<br>
+                    Arrival 7:00 PM
+                </small>
+            </div>
+
+            <div class="card">
+                <b>Venue</b>
+                <small>
+                    Maison Bleu<br>
+                    Final address coming soon
+                </small>
+            </div>
+
+            <div class="card">
+                <b>Dress code</b>
+                <small>
+                    Formal Attire
+                </small>
+            </div>
+
+        </div>
+
+        <div class="dress">
+
+            <div class="ey">
+                Dress code note
+            </div>
+
+            <p>
+                <strong>
+                    Navy blue is reserved for the quinceañera.
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     GALLERY
+======================================= -->
+
+<section class="gallery">
+
+    <div class="wrap">
+
+        <div class="ey" style="text-align:center">
+            Gallery
+        </div>
+
+        <h2 style="text-align:center">
+            A glimpse of this chapter
+        </h2>
+
+        <div class="photos">
+
+            <div class="ph a"></div>
+
+            <div class="ph b"></div>
+
+            <div class="ph c"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     GIFTS
+======================================= -->
+
+<section class="gifts">
+
+    <div class="wrap gift">
+
+        <div class="ey">
+            Gifts
+        </div>
+
+        <div class="envelope">
+            ✉
+        </div>
+
+        <h2>
+            Gifts
+        </h2>
+
+        <p>
+            Your presence is the greatest gift.
+            If you wish to celebrate Danna with something more,
+            an envelope gift would be warmly appreciated as she
+            begins this special new chapter.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     DIRECTIONS
+======================================= -->
+
+<section class="details">
+
+    <div class="wrap">
+
+        <div class="ey">
+            Directions
+        </div>
+
+        <h2>
+            See you there
+        </h2>
+
+        <div class="map">
+
+            <div class="mapdemo">
+
+                <div>
+
+                    <b>
+                        Event location
+                    </b>
+
+                    <br>
+
+                    <small>
+                        Final map coming soon
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="mapinfo">
+
+                <h3>
+                    Maison Bleu
+                </h3>
+
+                <p>
+                    Once the final venue is confirmed,
+                    the exact location will appear here.
+                </p>
+
+                <a
+                    class="btn"
+                    href="#"
+                    onclick="event.preventDefault()">
+                    Open in Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     RSVP
+======================================= -->
+
+<section class="rsvp">
+
+    <div class="wrap">
+
+        <div class="ey">
+            RSVP
+        </div>
+
+        <h2>
+            Will you celebrate with us?
+        </h2>
+
+        <p>
+            Please let us know if you can join Danna
+            on her special night.
+        </p>
+
+        <div class="box">
+
+            <form id="rsvpForm">
+
+                <input
+                    id="guestName"
+                    name="name"
+                    required
+                    placeholder="Guest name">
+
+                <select
+                    id="attendance"
+                    name="attendance"
+                    required>
+
+                    <option value="Joyfully accepts">
+                        Joyfully accepts
+                    </option>
+
+                    <option value="Regretfully declines">
+                        Regretfully declines
+                    </option>
+
+                </select>
+
+                <input
+                    id="guests"
+                    name="guests"
+                    type="number"
+                    min="1"
+                    max="10"
+                    value="1"
+                    aria-label="Number of guests">
+
+                <button
+                    id="rsvpButton"
+                    type="submit">
+                    Confirm attendance
+                </button>
+
+            </form>
+
+            <p id="thanks" hidden>
+                Thank you! Your response has been received.
+            </p>
+
+            <p id="rsvpError" hidden>
+                We couldn’t send your response. Please try again.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================
+     FOOTER
+======================================= -->
+
+<footer>
+
+    <div class="ey">
+        Danna · XV
+    </div>
+
+    <div class="serif">
+        Thank you for being part of my story
+    </div>
+
+    <p>
+        December 26, 2026
+    </p>
+
+</footer>
+
+
+<!-- =======================================
+     DEVELOPER
+======================================= -->
+
+<div class="developer-bar">
+
+    Digital invitation by
+    <strong>IAM Marketing + Design</strong>
+
+    <span>·</span>
+
+    <a
+        href="https://wa.me/593984487647"
+        target="_blank">
+        +593 98 448 7647
+    </a>
+
+</div>
+
+
+<!-- =======================================
+     COUNTDOWN SCRIPT
+======================================= -->
+
+<script>
+
+const t = new Date('2026-12-26T19:30:00').getTime();
+
+function tick(){
+
+    let x = Math.max(0,t-Date.now());
+
+    d.textContent =
+        String(Math.floor(x/86400000)).padStart(3,'0');
+
+    h.textContent =
+        String(Math.floor(x%86400000/3600000)).padStart(2,'0');
+
+    m.textContent =
+        String(Math.floor(x%3600000/60000)).padStart(2,'0');
+
+    s.textContent =
+        String(Math.floor(x%60000/1000)).padStart(2,'0');
+}
+
+tick();
+
+setInterval(tick,1000);
+
 </script>
-</body></html>
+
+
+<!-- =======================================
+     RSVP SCRIPT
+======================================= -->
+
+<script>
+
+const RSVP_ENDPOINT =
+"https://script.google.com/macros/s/AKfycbwnSbTcEdUG6lrwy-FNjVhdwDOTA_oO4iYqjRs9ABsgV9htGEA_7bZ_HuINwr0tuI_mHg/exec";
+
+const rsvpForm =
+    document.getElementById("rsvpForm");
+
+const rsvpButton =
+    document.getElementById("rsvpButton");
+
+const thanks =
+    document.getElementById("thanks");
+
+const rsvpError =
+    document.getElementById("rsvpError");
+
+
+rsvpForm.addEventListener(
+    "submit",
+    async function(event){
+
+        event.preventDefault();
+
+        thanks.hidden = true;
+        rsvpError.hidden = true;
+
+        rsvpButton.disabled = true;
+        rsvpButton.textContent = "Sending...";
+
+
+        const payload = {
+
+            name:
+                document
+                .getElementById("guestName")
+                .value
+                .trim(),
+
+            attendance:
+                document
+                .getElementById("attendance")
+                .value,
+
+            guests:
+                document
+                .getElementById("guests")
+                .value,
+
+            notes:"",
+
+            family:""
+        };
+
+
+        try{
+
+            const formData =
+                new URLSearchParams();
+
+            formData.append(
+                "name",
+                payload.name
+            );
+
+            formData.append(
+                "attendance",
+                payload.attendance
+            );
+
+            formData.append(
+                "guests",
+                payload.guests
+            );
+
+            formData.append(
+                "notes",
+                payload.notes
+            );
+
+            formData.append(
+                "family",
+                payload.family
+            );
+
+
+            await fetch(
+                RSVP_ENDPOINT,
+                {
+                    method:"POST",
+                    mode:"no-cors",
+                    body:formData
+                }
+            );
+
+
+            thanks.hidden = false;
+
+            rsvpForm.reset();
+
+            document
+                .getElementById("guests")
+                .value = "1";
+
+        }catch(error){
+
+            rsvpError.hidden = false;
+
+        }finally{
+
+            rsvpButton.disabled = false;
+
+            rsvpButton.textContent =
+                "Confirm attendance";
+        }
+    }
+);
+
+</script>
+
+
+<!-- =======================================
+     MUSIC + OPEN INVITATION SCRIPT
+======================================= -->
+
+<script>
+
+const music =
+    document.getElementById("bgMusic");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+const welcomeScreen =
+    document.getElementById("welcomeScreen");
+
+const openInvitation =
+    document.getElementById("openInvitation");
+
+
+music.volume = 0.45;
+
+
+/* OPEN INVITATION */
+
+openInvitation.addEventListener(
+    "click",
+    async function(){
+
+        /*
+        The click is a real user interaction,
+        so browsers normally allow audio here.
+        */
+
+        try{
+
+            await music.play();
+
+            musicButton.textContent = "♫";
+
+            musicButton.classList.remove("paused");
+
+            musicButton.setAttribute(
+                "aria-label",
+                "Pause music"
+            );
+
+        }catch(error){
+
+            musicButton.textContent = "▶";
+
+            musicButton.classList.add("paused");
+
+            musicButton.setAttribute(
+                "aria-label",
+                "Play music"
+            );
+        }
+
+
+        /*
+        Reveal floating music button
+        */
+
+        document.body.classList.add(
+            "invitation-open"
+        );
+
+
+        /*
+        Fade welcome screen
+        */
+
+        welcomeScreen.classList.add(
+            "hidden"
+        );
+
+
+        /*
+        Keep invitation at the beginning
+        */
+
+        window.scrollTo(0,0);
+
+    }
+);
+
+
+/* MUSIC BUTTON */
+
+musicButton.addEventListener(
+    "click",
+    async function(){
+
+        if(music.paused){
+
+            try{
+
+                await music.play();
+
+                musicButton.textContent = "♫";
+
+                musicButton.classList.remove(
+                    "paused"
+                );
+
+                musicButton.setAttribute(
+                    "aria-label",
+                    "Pause music"
+                );
+
+            }catch(error){
+
+                musicButton.textContent = "▶";
+
+                musicButton.classList.add(
+                    "paused"
+                );
+
+            }
+
+        }else{
+
+            music.pause();
+
+            musicButton.textContent = "▶";
+
+            musicButton.classList.add(
+                "paused"
+            );
+
+            musicButton.setAttribute(
+                "aria-label",
+                "Play music"
+            );
+        }
+    }
+);
+
+</script>
+
+
+</body>
+</html>
