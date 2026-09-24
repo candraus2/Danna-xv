@@ -109,8 +109,43 @@ button:hover{background:#0a3157}
 .developer-bar a:hover{
     text-decoration:underline;
 }
+.music-button{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:100;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    background:var(--gold);
+    color:var(--navy);
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    cursor:pointer;
+    box-shadow:0 6px 25px #0006;
+    transition:.3s ease;
+}
 
+.music-button:hover{
+    transform:scale(1.06);
+}
+
+.music-button.paused{
+    background:var(--navy);
+    color:var(--gold);
+}
 </style></head><body>
+  <audio id="bgMusic" loop preload="auto">
+  <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-button" type="button" aria-label="Pause music">
+  ♫
+</button>
 <section class="hero"><div class="hc"><div class="ey">Together with my family,<br>I invite you to celebrate</div><h1>Danna<small>MY XV</small></h1><div class="date">DECEMBER 26 · 2026</div></div></section>
 <section class="countdown"><div class="wrap"><div class="ey">Counting down to an unforgettable night</div><div class="count"><div><b id="d">000</b><span>DAYS</span></div><div><b id="h">00</b><span>HOURS</span></div><div><b id="m">00</b><span>MINUTES</span></div><div><b id="s">00</b><span>SECONDS</span></div></div></div></section>
 <section class="story"><div class="wrap grid"><div><div class="ey">My story</div><h2>A dream come true</h2><p>Some moments are meant to be treasured forever. I would love for you to be part of this special chapter filled with joy, memories and new beginnings.</p><div class="sig">Danna ♡</div></div><div class="storyphoto"></div></div></section>
@@ -184,5 +219,44 @@ rsvpForm.addEventListener("submit",async function(event){
   }
 });
 </script>
+<script>
+const music = document.getElementById("bgMusic");
+const musicButton = document.getElementById("musicButton");
 
+music.volume = 0.45;
+
+async function startMusic(){
+    try{
+        await music.play();
+        musicButton.textContent = "♫";
+        musicButton.classList.remove("paused");
+        musicButton.setAttribute("aria-label","Pause music");
+    }catch(error){
+        musicButton.textContent = "▶";
+        musicButton.classList.add("paused");
+        musicButton.setAttribute("aria-label","Play music");
+    }
+}
+
+musicButton.addEventListener("click", async () => {
+    if(music.paused){
+        await startMusic();
+    }else{
+        music.pause();
+        musicButton.textContent = "▶";
+        musicButton.classList.add("paused");
+        musicButton.setAttribute("aria-label","Play music");
+    }
+});
+
+startMusic();
+
+/* If autoplay is blocked, start on the visitor's first interaction */
+document.addEventListener("click", function firstInteraction(event){
+    if(music.paused && event.target !== musicButton){
+        startMusic();
+    }
+    document.removeEventListener("click", firstInteraction);
+}, {once:true});
+</script>
 </body></html>
