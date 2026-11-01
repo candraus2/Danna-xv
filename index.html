@@ -23,6 +23,16 @@
 
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -1075,6 +1085,122 @@ body.invitation-open .hero{animation:hero-arrive 1.5s ease-out both}
 @keyframes luxuryV13{0%{transform:scale(1);opacity:1;filter:brightness(1)}45%{transform:scale(1.035);opacity:1;filter:brightness(1.12)}100%{transform:scale(1.13);opacity:0;filter:brightness(1.2)}}
 @media(max-width:650px){#introOverlay .intro-photographic{width:100vw!important;height:auto!important;aspect-ratio:941/1672!important;max-height:100svh!important}}
 @media(prefers-reduced-motion:reduce){#introOverlay.opening .intro-photographic{animation-duration:.25s!important}}
+</style><style>
+/* V14 desktop-first refinements. Mobile V13 remains unchanged. */
+@media (min-width: 901px) {
+  section:not(.hero){padding:clamp(84px,8vw,126px) clamp(30px,6vw,100px)}
+  .wrap{max-width:1120px}
+  #introOverlay.luxury-intro{
+    background:radial-gradient(ellipse at 50% 47%,#18324b 0%,#07182d 66%,#020b17 100%)!important;
+  }
+  #introOverlay .intro-photographic{
+    width:min(85vw,1000px)!important;
+    height:min(90vh,800px)!important;
+    max-height:90vh!important;
+    aspect-ratio:1621/1151!important;
+    background-size:contain!important;
+    background-position:center!important;
+    background-repeat:no-repeat!important;
+  }
+  #introOverlay .intro-photographic #openSeal{
+    left:39%!important;top:43%!important;width:25%!important;height:14%!important;
+  }
+  .hero{height:100svh;min-height:620px;background:#061b32!important;}
+  .hero::before{
+    background-size:contain!important;
+    background-position:center center!important;
+    background-repeat:no-repeat!important;
+    filter:none!important;
+  }
+  .hero::after{background:linear-gradient(90deg,#04152b 0%,transparent 20%,transparent 80%,#04152b 100%),linear-gradient(0deg,#04152b 0%,transparent 18%)!important;}
+  .hero .hc{display:none!important}
+  .story .story-copy{max-width:850px!important}
+  .story h2,.details h2,.rsvp h2{font-size:clamp(60px,6vw,90px)!important}
+  .story p{max-width:740px!important;font-size:17px;line-height:1.9}
+  .translation-body{font-size:15px!important;line-height:1.9!important}
+  .cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+  .card{padding:34px 20px}
+  .rsvp .box{max-width:700px;margin-inline:auto}
+  .count{max-width:860px;margin-inline:auto}
+}
+@media (min-width:901px) and (max-height:650px){
+  #introOverlay .intro-photographic{height:95vh!important;max-height:95vh!important}
+  .hero{min-height:0;height:100vh}
+}
+@media (min-width:650px) and (max-width:900px){
+  #introOverlay .intro-photographic{width:min(95vw,780px)!important;height:auto!important;aspect-ratio:1621/1151!important;background-size:contain!important}
+  .hero::before{background-size:contain!important;background-position:center!important}
+  .hero{background:#04172c!important}
+  .hero .hc{display:none!important}
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+</style><style>
+/* V15 — champagne-gold countdown with high-contrast midnight typography */
+section.countdown {
+  background:linear-gradient(117deg,#b88b43 0%,#e3c88e 24%,#f4e3b9 49%,#d3ae69 77%,#a77c39 100%) !important;
+  color:#102943 !important;
+  position:relative;
+  isolation:isolate;
+}
+section.countdown::before {
+  content:"" !important; position:absolute !important; inset:0 !important;
+  background:repeating-linear-gradient(110deg,transparent 0,rgba(255,255,255,.065) 2px,transparent 4px,transparent 13px) !important;
+  opacity:.35 !important;pointer-events:none;z-index:0;
+}
+section.countdown::after {
+  content:"" !important;position:absolute !important;inset:0 !important;
+  background:linear-gradient(180deg,rgba(80,50,13,.10),transparent 25%,transparent 75%,rgba(80,50,13,.13)) !important;
+  pointer-events:none;z-index:0;
+}
+section.countdown .wrap {position:relative;z-index:1}
+section.countdown .ey {color:#17314a !important;font-weight:600 !important}
+section.countdown .ey-es {color:#5e513f !important}
+section.countdown .count b {color:#0a2945 !important;text-shadow:0 1px 0 #fff7dc8a !important}
+section.countdown .count span {color:#294057 !important;font-weight:600 !important;letter-spacing:.16em !important}
+section.countdown .count > div:not(:first-child) {border-left-color:rgba(51,48,42,.28) !important}
+@media(max-width:600px){section.countdown .count b{font-size:clamp(35px,10vw,64px) !important}}
+</style><style>
+/* V16: balanced champagne countdown and centered directions */
+.countdown{padding:clamp(38px,5vw,66px) 0!important;min-height:0!important}
+.countdown .wrap{max-width:1030px!important}
+.countdown .ey{font-size:clamp(17px,2.4vw,27px)!important;letter-spacing:.19em!important;line-height:1.3!important;font-weight:600!important;color:#122c45!important}
+.countdown .ey-es{font-size:clamp(12px,1.35vw,16px)!important;letter-spacing:.08em!important;margin-top:8px!important;color:#695634!important}
+.countdown .count{margin-top:clamp(20px,3vw,35px)!important}
+.countdown .count b{font-size:clamp(37px,6vw,65px)!important;line-height:1.05!important}
+.countdown .count span{font-size:clamp(9px,1.1vw,12px)!important;margin-top:6px!important}
+.countdown .count>div{padding:2px 7px!important}
+.directions>.wrap>.ey,.directions>.wrap>h2,.directions>.wrap>.translation-heading,
+.map-section>.wrap>.ey,.map-section>.wrap>h2,.map-section>.wrap>.translation-heading{ text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+.directions>.wrap>h2,.map-section>.wrap>h2{max-width:100%;}
+/* Fallback for the actual location section (regardless of its class name) */
+section:has(.map)>.wrap>.ey,section:has(.map)>.wrap>h2,section:has(.map)>.wrap>.translation-heading{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!important}
+.mapdemo{position:relative!important;min-height:320px!important;overflow:hidden!important;background:#e5e7e3!important}
+.mapdemo iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.83) contrast(.96)}
+.mapdemo .map-click{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:16px;text-decoration:none;background:linear-gradient(180deg,transparent 66%,#071c37a8 100%);cursor:pointer}
+.mapdemo .map-click span{font-family:Montserrat,Arial,sans-serif;color:#fff9e8;background:#092b4ae8;border:1px solid #e2c787;padding:12px 16px;border-radius:40px;font-size:10px;letter-spacing:.12em;box-shadow:0 4px 12px #0005}
+.mapinfo .btn{max-width:100%;white-space:normal;text-align:center;line-height:1.7}
+@media(max-width:700px){
+.countdown{padding:36px 0 40px!important}
+.countdown .count{margin-top:24px!important}
+.countdown .count b{font-size:clamp(34px,9vw,54px)!important}
+.countdown .count>div{padding:0 2px!important}
+.mapdemo{min-height:280px!important}
+.mapdemo .map-click span{font-size:9px;letter-spacing:.06em}
+}
+</style><style>
+.gifts .gift .translation-body{display:block;margin:15px auto 0;max-width:640px;color:#3e5064!important;font-style:italic;line-height:1.7;font-size:clamp(15px,1.6vw,19px)}
+.gifts .gift>p:not(.zelle-signature){max-width:640px;margin:22px auto 0;line-height:1.7;color:#20374e!important}
+.gifts .gift h2{color:#122c46!important}
+.zelle-card{max-width:430px;margin:32px auto 22px;padding:24px 18px;background:linear-gradient(145deg,#0b2946,#071a30);border:1px solid #c4a267;box-shadow:0 12px 25px #00192a24;text-align:center;color:#fff3df}
+.zelle-kicker{letter-spacing:.27em;font-size:13px;color:#e2c78e}.zelle-number{font-size:clamp(25px,5vw,37px);letter-spacing:.05em;margin:13px 0 6px;color:#fff8ec}.zelle-name{font-size:16px;color:#e2c78e}
+.zelle-copy{margin-top:20px;border:1px solid #c7aa76;border-radius:30px;background:transparent;color:#fff3df;padding:12px 22px;letter-spacing:.08em;cursor:pointer;max-width:100%}
+.zelle-copy:hover{background:#c7aa76;color:#081d35}.zelle-signature{font-family:Georgia,serif;font-style:italic;color:#705934!important;margin-top:18px!important}
+</style><style>
+/* V18: delicate silver and champagne confetti, limited to opening and cover */
+#danna-confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:99999;opacity:0;transition:opacity .65s ease}
+#danna-confetti.visible{opacity:1}
+@media(prefers-reduced-motion:reduce){#danna-confetti{display:none!important}}
 </style></head>
 <body><div class="luxury-intro" id="introOverlay"><div class="intro-photographic" id="introPhoto"><button aria-label="Abrir invitación / Open invitation" id="openSeal"><span class="sr-only">Abrir invitación / Open invitation</span></button></div><div class="intro-caption">TOCA EL SELLO <span>·</span> TAP THE SEAL</div><div class="reveal-warmth"></div></div>
 <!-- =======================================
@@ -1198,12 +1324,7 @@ body.invitation-open .hero{animation:hero-arrive 1.5s ease-out both}
 <section class="gifts">
 <div class="wrap gift">
 <div class="ey">Gifts<span class="ey-es">Regalos</span></div>
-<div class="envelope">
-            ✉
-        </div>
-<h2>With love</h2><div class="translation-heading">Con cariño</div>
-<p>Your presence is our greatest gift. If you wish, an envelope gift is warmly appreciated.</p><span class="translation-body">Tu presencia es nuestro mejor regalo. Si lo deseas, agradeceremos un obsequio en sobre.</span>
-</div>
+<h2>Gifts</h2><div class="translation-heading">Regalos</div><p>Celebrating this special milestone with you means the world to me. Your presence is truly the greatest gift. If you wish to give a gift, a card box will be available at the venue for envelopes. You may also send a gift digitally through Zelle.</p><p class="translation-body">Compartir este momento tan especial contigo significa muchísimo para mí. Tu presencia es el mejor regalo. Si deseas tener un detalle conmigo, tendremos un buzón para sobres en el lugar de la celebración. También puedes enviar tu regalo a través de Zelle.</p><div class="zelle-card"><div class="zelle-kicker">ZELLE</div><div class="zelle-number">954-470-4120</div><div class="zelle-name">Danna Uzcategui</div><button class="zelle-copy" id="zelleCopy" onclick="navigator.clipboard.writeText('954-470-4120').then(()=&gt;{this.textContent='Copied / Copiado';setTimeout(()=&gt;this.textContent='Copy Zelle / Copiar Zelle',2200)}).catch(()=&gt;{this.textContent='954-470-4120'})" type="button">Copy Zelle / Copiar Zelle</button></div><p class="zelle-signature">With love / Con cariño, Danna ♡</p></div>
 </section>
 <!-- =======================================
      DIRECTIONS
@@ -1213,7 +1334,7 @@ body.invitation-open .hero{animation:hero-arrive 1.5s ease-out both}
 <div class="ey">DIRECTIONS<span class="ey-es">CÓMO LLEGAR</span></div>
 <h2>See you there</h2><div class="translation-heading">Nos vemos allí</div>
 <div class="map">
-<div class="mapdemo"><div class="map-symbol">✦<small>ORLANDO · FLORIDA</small></div></div>
+<div class="mapdemo"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Aloft%20Orlando%20Lake%20Nona%2C%207215%20Corner%20Drive%2C%20Orlando%2C%20FL%2032827&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Google Maps — Aloft Orlando Lake Nona"></iframe><a aria-label="Abrir la ubicación en Google Maps / Open in Google Maps" class="map-click" href="https://www.google.com/maps/search/?api=1&amp;query=Aloft%20Orlando%20Lake%20Nona%2C%207215%20Corner%20Drive%2C%20Orlando%2C%20FL%2032827" rel="noopener noreferrer" target="_blank"><span>VER EN GOOGLE MAPS · OPEN IN MAPS</span></a></div>
 <div class="mapinfo">
 <h3>
                     Aloft Orlando Lake Nona
@@ -1460,5 +1581,52 @@ rsvpForm.addEventListener(
  },{once:true});
  if(musicButton)musicButton.addEventListener('click',async function(){if(!music)return;if(music.paused){try{await music.play();this.textContent='♫'}catch(e){this.textContent='▶'}}else{music.pause();this.textContent='▶'}});
 })();
-</script></body>
+</script><canvas aria-hidden="true" id="danna-confetti"></canvas><script>(function(){
+  'use strict';
+  const canvas=document.getElementById('danna-confetti');
+  const ctx=canvas&&canvas.getContext('2d');
+  if(!ctx||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const colors=['#f8f8f3','#c6cbd4','#e0e5ef','#b5bdc9','#dfc182','#f5db9d'];
+  let w=0,h=0,dpr=1,particles=[],raf=0,start=0,last=0,burstEnd=0;
+  function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0)}
+  function piece(burst){
+    // Confetti avoids the central title and date after the opening burst.
+    const side=Math.random()<.5;
+    return {x:burst?Math.random()*w:(side?Math.random()*w*.19:w*(.81+Math.random()*.19)),
+      y:burst?(-40-Math.random()*h*.6):(-20-Math.random()*h),
+      vx:(Math.random()-.5)*(burst?1.8:.65),vy:(burst?1.4:0.28)+Math.random()*(burst?2.5:.75),
+      size:2+Math.random()*4,rot:Math.random()*6.28,spin:(Math.random()-.5)*.035,
+      color:colors[Math.floor(Math.random()*colors.length)],alpha:.4+Math.random()*.45,
+      shape:Math.random()<.67?'rect':'circle'};
+  }
+  function render(now){
+    if(document.hidden){raf=requestAnimationFrame(render);last=now;return}
+    const dt=Math.min((now-last)/16.67||1,2);last=now;
+    ctx.clearRect(0,0,w,h);
+    const elapsed=now-start;
+    const active=elapsed<8500;
+    if(!active&&particles.length===0){canvas.classList.remove('visible');cancelAnimationFrame(raf);raf=0;return}
+    for(let i=particles.length-1;i>=0;i--){
+      const p=particles[i];p.x+=p.vx*dt+Math.sin(now*.0008+p.rot)*.18*dt;p.y+=p.vy*dt;p.rot+=p.spin*dt;
+      if(p.y>h+20){particles.splice(i,1);continue}
+      const fade=elapsed>6900?Math.max(0,1-(elapsed-6900)/1700):1;
+      ctx.globalAlpha=p.alpha*fade;ctx.fillStyle=p.color;
+      ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);
+      if(p.shape==='rect')ctx.fillRect(-p.size/2,-p.size*.35,p.size,p.size*.7);
+      else {ctx.beginPath();ctx.arc(0,0,p.size*.4,0,Math.PI*2);ctx.fill()}
+      ctx.restore();
+    }
+    ctx.globalAlpha=1;
+    if(elapsed>1700&&elapsed<6700&&Math.random()<.45&&particles.length<100)particles.push(piece(false));
+    raf=requestAnimationFrame(render);
+  }
+  function begin(){
+    if(raf)cancelAnimationFrame(raf);
+    resize();particles=Array.from({length:Math.min(105,Math.max(45,Math.floor(w/7)))},()=>piece(true));
+    start=performance.now();last=start;canvas.classList.add('visible');raf=requestAnimationFrame(render);
+  }
+  const seal=document.getElementById('openSeal');
+  if(seal)seal.addEventListener('click',()=>setTimeout(begin,1250),{once:true});
+  window.addEventListener('resize',resize,{passive:true});
+})();</script></body>
 </html>
