@@ -1243,7 +1243,37 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
 .rsvp-one span{display:block;color:#d8c5a5;font-size:clamp(14px,1.7vw,17px);font-style:italic;line-height:1.7;}
 @media(max-width:760px){.details .cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;}.navy-card{padding:24px 10px;}}
 @media(max-width:400px){.details .cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;}.navy-card b{font-size:16px;}}
-</style></head>
+</style>
+
+<style>
+/* Event Details: cuatro tarjetas en computadora */
+@media (min-width: 769px) {
+  .details .cards {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .details .cards > .card {
+    width: auto !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+}
+
+/* Event Details: dos tarjetas por fila en celular */
+@media (max-width: 768px) {
+  .details .cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .details .cards > .card {
+    width: auto !important;
+    grid-column: auto !important;
+  }
+}
+</style>
+</head>
 <body><div class="luxury-intro" id="introOverlay"><div class="intro-photographic" id="introPhoto"><button aria-label="Abrir invitación / Open invitation" id="openSeal"><span class="sr-only">Abrir invitación / Open invitation</span></button></div><div class="intro-caption">TOCA EL SELLO <span>·</span> TAP THE SEAL</div><div class="reveal-warmth"></div></div>
 <!-- =======================================
      OPEN INVITATION SCREEN
