@@ -1241,6 +1241,19 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
 .dress .dress-es-title{font-size:clamp(14px,2.8vw,18px);margin-top:3px;margin-bottom:14px;}
 .dress .dress-es-line{font-size:clamp(13px,2.5vw,17px);margin:-9px auto 20px;max-width:680px;}
 .dress .dress-es-colors{font-size:clamp(12px,2.4vw,16px);margin-top:8px;}
+</style><style>
+/* V25: clean photographic cover with editable HTML lettering */
+.hero{min-height:100svh!important;height:auto!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:30px 14px!important;background:#03142b!important;isolation:isolate!important}
+.hero::before{content:""!important;position:absolute!important;inset:0!important;background-image:url("images/portada-danna-limpia.webp")!important;background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;z-index:0!important;opacity:1!important;filter:none!important}
+.hero::after{content:""!important;position:absolute!important;inset:0!important;background:linear-gradient(180deg,rgba(2,12,27,.1),rgba(2,12,27,.1) 30%,rgba(2,15,34,.42) 65%,rgba(2,15,34,.86))!important;z-index:1!important}
+.hero .hc{display:flex!important;position:relative!important;z-index:3!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;width:min(94%,680px)!important;max-width:680px!important;padding:0!important;margin:clamp(120px,22vh,240px) auto 0!important;gap:0!important;transform:none!important}
+.hero .hc::before,.hero .hc::after{display:none!important}
+.hero .parents{font:400 clamp(24px,5vw,46px) 'Cormorant Garamond',Georgia,serif!important;color:#f3d391!important;letter-spacing:.04em!important;text-shadow:0 2px 12px #061329!important}
+.hero .parent-invite{font:500 clamp(10px,1.6vw,14px)/1.65 Georgia,serif!important;color:#f4e4c4!important;letter-spacing:.14em!important;margin:8px 0 8px!important;text-align:center!important;max-width:100%!important}
+.hero h1{font:italic 400 clamp(76px,16vw,150px)/1.05 'Great Vibes','Brush Script MT',cursive!important;color:#fff1d5!important;text-shadow:0 3px 8px #06152a,0 0 17px #d9b97855!important;margin:10px auto!important;letter-spacing:0!important}
+.hero .myxv{font:400 clamp(16px,3vw,24px) Georgia,serif!important;letter-spacing:.38em!important;color:#e5bc6d!important;margin:5px auto 18px!important}
+.hero .date{font:400 clamp(15px,2.5vw,22px) Georgia,serif!important;letter-spacing:.19em!important;color:#f0cb80!important;margin:0 auto!important;text-align:center!important}
+@media(max-width:720px){.hero{min-height:100svh!important;padding:25px 10px!important}.hero::before{background-size:auto 100%!important;background-position:50% 50%!important}.hero .hc{margin:clamp(145px,29vh,280px) auto 0!important;width:98%!important}.hero .parents{font-size:clamp(25px,7vw,38px)!important}.hero .parent-invite{font-size:clamp(9px,2.6vw,12px)!important;letter-spacing:.08em!important}.hero h1{font-size:clamp(84px,23vw,126px)!important}.hero .date{font-size:clamp(12px,3.4vw,17px)!important;letter-spacing:.11em!important}}
 </style></head>
 <body><div class="luxury-intro" id="introOverlay"><div class="intro-photographic" id="introPhoto"><button aria-label="Abrir invitación / Open invitation" id="openSeal"><span class="sr-only">Abrir invitación / Open invitation</span></button></div><div class="intro-caption">TOCA EL SELLO <span>·</span> TAP THE SEAL</div><div class="reveal-warmth"></div></div>
 <!-- =======================================
@@ -1259,14 +1272,7 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
      HERO
 ======================================= -->
 <section class="hero">
-<div class="hc">
-<div class="ey">MARIO &amp; CIRA INVITE YOU TO CELEBRATE<span class="ey-es">MARIO Y CIRA TE INVITAN A CELEBRAR</span></div>
-<div class="parent-invite">THE QUINCEAÑERA OF THEIR DAUGHTER</div><h1>
-            Danna
-            <small>MY XV · MIS QUINCE AÑOS</small>
-</h1>
-<div class="date">DECEMBER 26 · DICIEMBRE 26 · 2026</div>
-</div>
+<div class="hc"><div class="parents">Mario &amp; Cira</div><div class="parent-invite">INVITE YOU TO CELEBRATE<br/>THE QUINCEAÑERA OF THEIR DAUGHTER</div><h1>Danna</h1><div class="myxv">MY XV</div><div class="date">DECEMBER 26 · 2026</div></div>
 </section>
 <!-- =======================================
      COUNTDOWN
