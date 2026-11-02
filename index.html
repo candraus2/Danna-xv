@@ -1230,6 +1230,19 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
 .rsvp-deadline span{display:block;color:#d8c5a5;font-size:clamp(13px,3.4vw,15px);font-style:italic;line-height:1.6}
 .details .cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 @media(max-width:650px){.details .cards{grid-template-columns:1fr!important}}
+</style><style>
+/* V28: fourth event detail and concise RSVP */
+.details .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));}
+.details .cards .card{min-width:0;}
+.navy-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;}
+.navy-card .navy-dot{display:block;width:46px;height:46px;flex:0 0 46px;border-radius:50%;background:#071b38;border:3px solid #e2c27e;box-shadow:0 0 0 2px rgba(255,255,255,.1),0 0 16px rgba(226,194,126,.18);}
+.navy-card b{font-size:clamp(16px,1.6vw,23px);line-height:1.15;}
+.navy-card small{line-height:1.5;}
+.rsvp-one{text-align:center;max-width:700px;margin:28px auto 34px;}
+.rsvp-one p{color:#f6f0e5;font-size:clamp(16px,2vw,20px);line-height:1.65;margin:0 0 13px;}
+.rsvp-one span{display:block;color:#d8c5a5;font-size:clamp(14px,1.7vw,17px);font-style:italic;line-height:1.7;}
+@media(max-width:760px){.details .cards{grid-template-columns:repeat(2,minmax(0,1fr));}.navy-card{padding:24px 10px;}}
+@media(max-width:400px){.details .cards{grid-template-columns:repeat(2,minmax(0,1fr));}.navy-card b{font-size:16px;}}
 </style></head>
 <body><div class="luxury-intro" id="introOverlay"><div class="intro-photographic" id="introPhoto"><button aria-label="Abrir invitación / Open invitation" id="openSeal"><span class="sr-only">Abrir invitación / Open invitation</span></button></div><div class="intro-caption">TOCA EL SELLO <span>·</span> TAP THE SEAL</div><div class="reveal-warmth"></div></div>
 <!-- =======================================
@@ -1320,8 +1333,8 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
                     7215 Corner Drive · Orlando, FL 32827
                 </small>
 </div>
-</div>
-<div class="dress"><div class="dress-heading">DRESS CODE</div><div class="dress-es">Código de vestimenta</div><div class="dress-title">Formal Attire</div><div class="dress-es dress-es-title">Vestimenta formal</div><p class="dress-line"><b>Ladies:</b> Dresses in the selected colors.</p><p class="dress-es dress-es-line"><b>Damas:</b> Vestidos en los colores seleccionados.</p><p class="dress-line"><b>Gentlemen:</b> Formal suits with ties in one of the selected colors.</p><p class="dress-es dress-es-line"><b>Caballeros:</b> Trajes formales con corbatas en uno de los colores seleccionados.</p><div aria-label="Pink, Champagne, Purple, Rose Gold, White" class="dress-palette"><span style="background:#f2a4c1" title="Pink"></span><span style="background:#e8d3a4" title="Champagne"></span><span style="background:#9365af" title="Purple"></span><span style="background:#b8797c" title="Rose Gold"></span><span style="background:#fff" title="White"></span></div><div class="dress-colors">Pink · Champagne · Purple · Rose Gold · White</div><div class="dress-es dress-es-colors">Rosa · Champán · Morado · Oro rosa · Blanco</div><p class="dress-reserved">Navy blue is reserved exclusively for Danna.</p><p class="dress-es dress-reserved-es">El azul marino está reservado exclusivamente para Danna.</p></div>
+<div class="card navy-card"><span aria-hidden="true" class="navy-dot"></span><b>Reserved for Danna</b><span class="translation-card">Reservado para Danna</span><small>Navy blue · Azul marino</small></div></div>
+<div class="dress"><div class="dress-heading">DRESS CODE</div><div class="dress-es">Código de vestimenta</div><div class="dress-title">Formal Attire</div><div class="dress-es dress-es-title">Vestimenta formal</div><p class="dress-line"><b>Ladies:</b> Dresses in the selected colors.</p><p class="dress-es dress-es-line"><b>Damas:</b> Vestidos en los colores seleccionados.</p><p class="dress-line"><b>Gentlemen:</b> Formal suits with ties in one of the selected colors.</p><p class="dress-es dress-es-line"><b>Caballeros:</b> Trajes formales con corbatas en uno de los colores seleccionados.</p><div aria-label="Pink, Champagne, Purple, Rose Gold, White" class="dress-palette"><span style="background:#f2a4c1" title="Pink"></span><span style="background:#e8d3a4" title="Champagne"></span><span style="background:#9365af" title="Purple"></span><span style="background:#b8797c" title="Rose Gold"></span><span style="background:#fff" title="White"></span></div><div class="dress-colors">Pink · Champagne · Purple · Rose Gold · White</div><div class="dress-es dress-es-colors">Rosa · Champán · Morado · Oro rosa · Blanco</div></div>
 </div>
 </section>
 <!-- =======================================
@@ -1367,18 +1380,10 @@ section:has(.map)>.wrap>h2::after{margin-left:auto!important;margin-right:auto!i
 <div class="ey">
             RSVP
         </div>
-<h2>Will you celebrate with us?</h2><div class="translation-heading">¿Nos acompañas?</div>
-<p>Please confirm if you can join Danna.</p>
-<span class="translation-body">
-  Confirma si nos acompañarás en su noche especial.
-</span>
-<div class="rsvp-deadline">
-<strong>Please RSVP by December 4, 2026.</strong>
-<span>
-    Por favor, confirma tu asistencia hasta
-    el 4 de diciembre de 2026.
-  </span>
-</div>
+<h2>Will you celebrate with us?</h2><div class="translation-heading">¿Nos acompañas?</div><div class="rsvp-one"><p>Please confirm if you can join Danna on her special night by December 4, 2026.</p><span>Confirma si nos acompañarás en su noche especial hasta el 4 de diciembre de 2026.</span></div>
+
+
+
 <div class="box">
 <form id="rsvpForm">
 <input id="guestName" name="name" placeholder="Guest name" required=""/>
